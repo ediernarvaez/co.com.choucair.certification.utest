@@ -6,6 +6,9 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Hit;
+import org.openqa.selenium.Keys;
+
 
 public class Register implements Task {
 
@@ -45,6 +48,8 @@ public class Register implements Task {
                 Click.on(UtestRegisterPage.OPTION_DATE_YEAR),
                 Click.on(UtestRegisterPage.NEXT_LOCATION),
                 Enter.theValue(strCity).into(UtestRegisterPage.INPUT_CITY),
+                Hit.the(Keys.DOWN).keyIn(UtestRegisterPage.INPUT_CITY),
+                Hit.the(Keys.ENTER).keyIn(UtestRegisterPage.INPUT_CITY),
                 Enter.theValue(strZipCode).into(UtestRegisterPage.INPUT_ZIP_CODE),
                 Click.on(UtestRegisterPage.SELECT_COUNTRY),
                 Click.on(UtestRegisterPage.NEXT_DEVICES),

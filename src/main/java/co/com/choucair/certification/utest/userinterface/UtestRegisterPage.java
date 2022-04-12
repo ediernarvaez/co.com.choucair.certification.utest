@@ -38,7 +38,7 @@ public class UtestRegisterPage extends PageObject {
     public static final Target NEXT_LOCATION = Target.the("next button")
             .located(By.xpath("//span[contains(text(), 'Next: Location')]"));
 
-    public static final Target INPUT_CITY = Target.the("where do we write the city")
+    public static final Target INPUT_CITY = Target.the("Enter the city")
             .located(By.id("city"));
 
     public static final Target INPUT_ZIP_CODE = Target.the("where do we write the zip code")

@@ -15,4 +15,4 @@ Feature: Utest
   Scenario: Register a new user
     Given set data in fields
       | strFirstName  | strLastName | strEmailAddress        | strCity    | strZipCode | strPassword    |
-      | david         | lopez       | mojici3039@xasems.com  | Popayán    | 190002     | David123456*   |
+      | david         | perez       | mojici3039@xasems.com  | Balboa     | 195530     | David123456*   |
